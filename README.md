@@ -138,6 +138,8 @@ php artisan up
 echo 'Deploy finished.'
 ```
 
-### Note: Pipelines run on every merge to `dev` only, if you want them to run on any branch edit `bitbucket.pipelines.yml` to branches: `default` instead of `dev`.
+#### Note on branches: 
+Pipelines run on every merge to `dev` only, if you want them to run on any branch edit `bitbucket.pipelines.yml` to branches: `default` instead of `dev`.
 
-### Note: Deployment is automated to stagging but not to production as it's custom step, to run production deployment go to bitbucket and run the pipeline manually. If you want to automate deployment to production also, you should change branches: `{dev,master}` or `default` and move the whole block from custom step to a regular step at the end of the file.
+#### Note on auto deploy to production: 
+Deployment is automated to stagging but not to production as it's custom step, to run production deployment go to bitbucket and run the pipeline manually. If you want to automate deployment to production also, you should change branches: `{dev,master}` or `default` and move the whole block from custom step to a regular step at the end of the file.
