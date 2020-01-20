@@ -125,7 +125,7 @@ echo "Deploy script finished execution"
 
 ##### 6- In your deployment server 'shared/vps/dedicated',  add this file to your home directory pull-project.sh (server)
 ```
-cd ~/marketing-srmg
+cd ~/your-project-root-directory
 php artisan down
 git pull
 composer install --no-dev --prefer-dist --optimize-autoloader
